@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+    </head>
+    <body>
+
+<script>
+  function login()
+  {
+    var un=document.forms["myform"]["uname"].value;
+    var psw=document.forms["myform"]["psw"].value;
+
+    if (username=="Sally")
+    {
+    if (password=="12345")
+    {
+      alert (login successful);
+    }
+    else
+    {
+      alert (incorrect username or password);
+    }
+  }
+    else
+    {
+      alert (incorrect username or password);
+    }
+  }
+
+
+</script>
+
+<form name=myform>
+    Username:<input type="text" name="uname"><br>
+    Password:<input type="password" name="psw"><br>
+    <input type="submit" onclick="login()">
+
+</form>
+    </body>
+  </html>
